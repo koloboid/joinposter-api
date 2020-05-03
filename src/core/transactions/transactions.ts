@@ -49,7 +49,7 @@ export class Transactions extends BaseApiRoute {
   }
 
   @ApiMethod()
-  private changeTransactionProductCount(
+  changeTransactionProductCount(
     @CBody() body: t.ChangeProductTransactionCountBody,
     @Context() ctx: QContext = {},  
   ): Promise<t.AddProductTransactionResponse> {
